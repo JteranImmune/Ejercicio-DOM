@@ -1,0 +1,16 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  height: 100vh;
+  margin: 0;
+}
+
+.emptyHeart {
+  color: white;
+}
+
+.fillHeart {
+  color: #ff5959;
+}

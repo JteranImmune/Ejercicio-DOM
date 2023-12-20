@@ -1,0 +1,12 @@
+body {
+  height: 500vh;
+  font-family: sans-serif;
+  background-color: black;
+  color: white;
+}
+
+.arrowIcon {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}

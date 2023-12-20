@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Random Movie Generator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="flex-container">
+      <div class="article">
+        <h1>Random Movie Generator</h1>
+        <p id="paragraph">True Detective (I)</p>
+        <span>(●'◡'●)</span>
+        <a href="#" class="button" id="random-button">Random Movie</a>
+      </div>
+    </div>
+
+    <script src="./randommovie.js"></script>
+
+    <script>
+      const movie = document.querySelector("#paragraph");
+      const button = document.querySelector(".button");
+
+      button.addEventListener("click" , (e) => {
+        e.preventDefault();
+        const movieRandom = data[Math.floor(Math.random() * data.length)].Title;
+
+        // const title = data.forEach(element => {
+        //   const movieTitle = element.Title;  
+        //   // const movieRandom = Math.floor(Math.random(movieTitle) * movieTitle.length);
+        // });
+        
+        movie.innerText = movieRandom;
+      })
+    </script>
+  </body>
+</html>

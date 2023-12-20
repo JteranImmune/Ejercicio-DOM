@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <link rel="stylesheet" href="pwd.css" />
+  </head>
+  <body>
+    <h1>Mega formulario :D</h1>
+    <form id="passwordForm" class="password-form">
+      <div class="input-group">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required />
+      </div>
+      <div class="input-group">
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required />
+      </div>
+      <button class="submit-button" type="submit">Submit</button>
+    </form>
+
+    <script>
+      // const inputs = document.querySelectorAll(".input-group");
+      // const arrayInputs = [];
+      // inputs.forEach(element => {
+      //   arrayInputs.push(element.lastElementChild);
+      // });
+
+      const pass = document.querySelector("#password");
+      const user = document.querySelector("#username");
+      const button = document.querySelector(".submit-button");
+
+      button.addEventListener("click", (event) => {
+        event.preventDefault();
+        const userValue = user.value;
+        const passValue = pass.value;
+
+        const formValues = {
+          user : user.value,
+          pass : pass.value
+        };
+
+        console.log(formValues);
+
+        // const inputValue = arrayInputs.map(() => {
+        //   arrayInputs.value;
+        // });
+        
+      })
+    </script>
+  </body>
+</html>

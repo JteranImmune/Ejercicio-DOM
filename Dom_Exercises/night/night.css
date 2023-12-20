@@ -1,0 +1,23 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.night-mode {
+  background-color: black;
+}
+
+.icon-hover {
+  transition: 0.3s;
+}
+
+.icon-hover:hover {
+  transform: scale(1.2);
+}
+
+.display-none {
+  display: none;
+}

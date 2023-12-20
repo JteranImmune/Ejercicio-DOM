@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Night</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="night.css" />
+  </head>
+  <body id="body" class="">
+    <i
+      class="bi bi-moon icon-hover"
+      style="font-size: 200px; cursor: pointer"
+    ></i>
+    <i
+      class="bi bi-sun-fill icon-hover display-none"
+      style="font-size: 200px; cursor: pointer; color: white"
+    ></i>
+  </body>
+
+  <script>
+
+    const moon = document.querySelector(".bi-moon");
+    const sun = document.querySelector(".bi-sun-fill");
+    const body = document.querySelector("#body")
+
+    moon.addEventListener("click", () => {
+      moon.classList.toggle("display-none");
+      body.classList.toggle("night-mode");
+      sun.classList.toggle("display-none");
+    });
+
+    sun.addEventListener("click", () => {
+      sun.classList.toggle("display-none");
+      body.classList.toggle("night-mode");
+      moon.classList.toggle("display-none");
+    });
+
+
+  </script>
+</html>

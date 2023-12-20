@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Events</title>
+    <link rel="stylesheet" href="love.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"
+    />
+  </head>
+  <body style="margin: 0">
+    <i
+      id="love"
+      class="bi bi-heart-fill emptyHeart"
+      style="font-size: 200px; cursor: pointer"
+    ></i>
+  </body>
+
+  <script>
+    const heart = document.querySelector("#love");
+    heart.addEventListener("dblclick", () =>{
+      heart.classList.toggle("fillHeart");
+    })
+  </script>
+</html>
